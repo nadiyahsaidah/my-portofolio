@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="porto.css">
+</head>
+<body>
+    <header>
+        <div class="container-home">
+            <div class="logo">
+                <h2>My Portfolio</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#second-projects"> Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#tools">Tools</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
+                </ul>
+            </nav>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="image-text-container">
+            <div class="image-container">
+                <img src="aa.jpg" alt="Your Image Description">  
+            </div>
+            <div class="text-container">
+                <p>Hallo!<br>Welcome to My Creative Space<br>I’m UI/UX designer and Web Developer.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-me">
+            <h2>About Me</h2>
+            <div class="about-me-container">
+                <div class="about-me-content">
+                    <p>I am a graduate of Alma Ata University Yogyakarta, department of Informatics. I have good organizational experience and am able to work in a team or individually. My skills include web programming, UI/UX design, as well as database management. With a high enthusiasm for learning, I am committed to making the best contribution to support the company's progress.</p>
+                    <div class="skills">
+                        <span>Web Programming</span>
+                        <span>UI/UX Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="second-projects">
+        <h2>Projects</h2>
+        <div class="container">
+            <div class="slide">
+                <div class="item" style="background-image: url('images/project3.png');">
+                    <div class="content">
+                        <div class="name">Animasi</div>
+                        <div class="des">Membuat iklan dengan animasi agar menarik.</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('images/project1.jpg');">
+                    <div class="content">
+                        <div class="name">Design Aplikasi Olahraga</div>
+                        <div class="des">Mendesign user interface untuk aplikasi olahraga.</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('images/project2 (2).png');">
+                    <div class="content">
+                        <div class="name">Website Pijar Belajar</div>
+                        <div class="des">Berperan sebagai frontend developer intern untuk mengimplementasikan design yang sudah ada ke dalam code.</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('images/project4.png');">
+                    <div class="content">
+                        <div class="name">Website Parenting</div>
+                        <div class="des">Berperan sebagai UI/UX untuk mendesign halaman website.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="experience">
+            <h2>Experience</h2>
+            <div class="experience-container">
+                <div class="experience-item">
+                    <div class="experience-content">
+                        <h3>PT. Telekomunikasi Indonesia Tbk</h3>
+                        <p class="role">Front End Developer Intern (August 2023 - December 2023)</p>
+                        <p class="description">Worked on developing and optimizing responsive web pages. I participated in sharing the backlog with the FE team, then worked on it using Visual Studio Code, CMder, and Postman. The code created was pushed to GitLab for version control, collaboration, and code review by the QA team before the next stage.</p>
+                    </div>
+                    <div class="experience-image">
+                        <img src="images/telkom.jpg" alt="PT. Telekomunikasi Indonesia Tbk">
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-content">
+                        <h3>Komunitas Belajar Bersama KBBMI</h3>
+                        <p class="role">Mentor Pemrograman Web (September 2022 - December 2022)</p>
+                        <p class="description">Conducted weekly learning sessions covering basic web development, including frontend and backend programming, UI/UX design, and interactive discussions to enhance participant understanding.</p>
+                    </div>
+                    <div class="experience-image">
+                        <img src="images/kbbmi.jpg" alt="Komunitas Belajar Bersama KBBMI">
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-content">
+                        <h3>Himpunan Mahasiswa Informatika (HIMATIK)</h3>
+                        <p class="role">Anggota Divisi PSDA (February 2022 - December 2022)</p>
+                        <p class="description">Organized skill development programs for Informatics students, providing training in technology and soft skills to support their growth.</p>
+                    </div>
+                    <div class="experience-image">
+                        <img src="images/himatik.jpg" alt="Himpunan Mahasiswa Informatika">
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-content">
+                        <h3>PT. Mitra Semeru Indonesia</h3>
+                        <p class="role">Studi Independen Kampus Merdeka (August 2022 - December 2022)</p>
+                        <p class="description">Designed and implemented the AI Cycle Project, learned Python programming language, performed analysis and statistics in the AI domain to perform AI modeling and problem analysis.</p>
+                    </div>
+                    <div class="experience-image">
+                        <img src="images/stupen.jpg" alt="PT. Mitra Semeru Indonesia">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools">
+        <div class="tools">
+            <h2>Tools</h2>
+            <div class="tools-container">
+                <div class="tools-item">
+                    <img src="images/image 4.png">
+                    <p>Visual Studio Code</p>
+                </div>
+                <div class="tools-item">
+                    <img src="images/image 5.png">
+                    <p>PHP</p>
+                </div>
+                <div class="tools-item">
+                    <img src="images/image 6.png">
+                    <p>Postman</p>
+                </div>
+                <div class="tools-item">
+                    <img src="images/image 7.png">
+                    <p>Figma</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <p>Let's work together! Feel free to reach out.</p>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Bekasi, Indonesia</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>nadiyahsaidah2002@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+62 8953 2502 8877</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/nadiyah-saidah-47b185278/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/nadiyahsaidah" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/nadiyahsaa_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@nadiyahsaidah" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add JavaScript Here -->
+    <script>
+        
+        function toggleMenu() {
+        const menu = document.querySelector('.menu ul');
+        menu.classList.toggle('active');
+    }
+        // Add scroll animation for Home section
+        const homeSection = document.querySelector('#home');
+        const textElements = document.querySelectorAll('.text-container p');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    textElements.forEach((p, index) => {
+                        setTimeout(() => {
+                            p.classList.add('fade-in');
+                        }, index * 200); // Delay each line by 200ms
+                    });
+                    observer.unobserve(homeSection); // Stop observing after animation
+                }
+            });
+        }, { threshold: 0.5 }); // Trigger when 50% of the section is visible
+
+        observer.observe(homeSection);
+
+    // JavaScript for the Second Projects Carousel
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+
+        next.addEventListener('click', function () {
+            let items = document.querySelectorAll('.item');
+            document.querySelector('.slide').appendChild(items[0]);
+        });
+
+        prev.addEventListener('click', function () {
+            let items = document.querySelectorAll('.item');
+            document.querySelector('.slide').prepend(items[items.length - 1]);
+        });
+
+        // Add scroll animation for Tools section
+        const toolsSection = document.querySelector('#tools');
+
+        window.addEventListener('scroll', () => {
+            const sectionTop = toolsSection.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (sectionTop < windowHeight * 0.8) {
+                toolsSection.classList.add('visible');
+            }
+        });
+
+        // Add scroll animation for Experience section
+        const experienceSection = document.querySelector('#experience');
+
+        window.addEventListener('scroll', () => {
+            const sectionTop = experienceSection.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (sectionTop < windowHeight * 0.8) {
+                experienceSection.classList.add('visible');
+            }
+        });
+
+        // Add scroll animation for Contact section
+        const contactSection = document.querySelector('#contact');
+
+        window.addEventListener('scroll', () => {
+            const sectionTop = contactSection.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (sectionTop < windowHeight * 0.8) {
+                contactSection.classList.add('visible');
+            }
+        });
+    </script>
+</body>
+</html>
