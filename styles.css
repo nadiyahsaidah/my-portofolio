@@ -25,7 +25,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #1f2a3a;
     color: #fff;
     padding: 10px 0;
 }
@@ -275,6 +275,9 @@ section {
     opacity: 0;
     animation: fadeInRight 0.8s ease forwards;
 }
+/* ============================= */
+/* ====  Tampilan di atas 768px  ==== */
+/* ============================= */
 
 #second-projects {
     padding: 50px 20px;
@@ -429,103 +432,93 @@ section {
     color: #fff;
 }
 
-body{
+body {
     background: #eaeaea;
 }
 
-@keyframes animate {
-    from{
-        opacity: 0;
-        transform: translate(0, 100px);
-        filter: blur(33px);
-    }
+/* ============================= */
+/* ====  Tampilan Mobile (480px ke bawah)  ==== */
+/* ============================= */
 
-    to{
-        opacity: 1;
-        transform: translate(0);
-        filter: blur(0);
-    }
-}
-
-
-
-.button{
-    width: 100%;
+@media (max-width: 480px) {
+    
+/* #second-projects {
+    padding: 50px 20px;
     text-align: center;
-    position: absolute;
-    bottom: 20px;
+} */
+
+#second-projects h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
 }
 
-.carousel-container {
-    position: relative;
-    max-width: 100%;
+.container {
+    max-width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
     overflow: hidden;
-    margin: 20px auto;
-    font-size: 26px
+    border-radius: 20px;
 }
 
-.carousel {
+.slide {
     display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
-.carousel-item {
-    font-size: 16px;
-    min-width: 100%;
-    box-sizing: border-box;
-    text-align: center;
+.item {
+    width: 110px;
+    height: 60px;
 }
 
-.carousel-item img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.slide .item:nth-child(1),
+.slide .item:nth-child(2) {
+    top: 0;
+    transform: translate(0, 0);
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+    right: 0;
 }
 
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+.slide .item:nth-child(3) {
+    left: 60%;
+}
+
+.item .content {
+    width: 50%;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.slide .item:nth-child(2) .content {
+    display: block;
+}
+
+.content .name {
+    font-size: 9px;
+}
+
+.content .des {
+    font-family: 'Playfair Display', serif;
+    font-size: 9px;
+}
+
+.content button {
+    padding: 10px 20px;
     border: none;
-    padding: 10px 15px;
     cursor: pointer;
-    font-size: 24px;
-    border-radius: 50%;
-    z-index: 10; 
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
 }
 
-.carousel-button.prev {
-    left: 10px;
+.button button {
+    width: 30px;
+    height: 30px;
 }
 
-.carousel-button.next {
-    right: 10px;
-}
-
-.carousel-button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    padding: 0; 
-}
-
-.carousel-button.prev {
-    left: 10px;
-}
-
-.carousel-button.next {
-    right: 10px;
-}
-
-.carousel-button:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 #experience {
@@ -554,6 +547,7 @@ body{
     margin-bottom: 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-wrap: wrap; /* Menambahkan properti agar konten fleksibel */
 }
 
 .experience-item:hover {
@@ -569,7 +563,6 @@ body{
 .experience-content h3 {
     margin-bottom: 10px;
     color: #fff;
-    ;
 }
 
 .experience-content .role {
@@ -579,7 +572,7 @@ body{
 }
 
 .experience-content .description {
-    color: #fff;    ;
+    color: #fff;
     line-height: 1.6;
 }
 
@@ -876,6 +869,17 @@ body{
     } 
 }
 
+@media (max-width: 480px) {
+    .experience h2 {
+        font-size: 1.5em; /* Menyesuaikan ukuran font h2 */
+        margin-bottom: 20px;
+    }
+
+    .experience-item {
+        gap: 15px; /* Mengurangi jarak antar elemen pada layar lebih kecil */
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .menu ul {
@@ -899,6 +903,25 @@ body{
 
     .burger-menu {
         display: flex;
+    }
+
+    .experience-item {
+        flex-direction: column; /* Mengubah flex menjadi kolom pada layar kecil */
+        align-items: center;
+        text-align: center;
+    }
+
+    .experience-image {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .experience-content {
+        flex: 1;
+    }
+
+    .experience-container {
+        padding: 0 15px;
     }
 }
 
