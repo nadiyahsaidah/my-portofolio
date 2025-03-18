@@ -275,9 +275,6 @@ section {
     opacity: 0;
     animation: fadeInRight 0.8s ease forwards;
 }
-/* ============================= */
-/* ====  Tampilan di atas 768px  ==== */
-/* ============================= */
 
 #second-projects {
     padding: 50px 20px;
@@ -382,8 +379,6 @@ section {
 .content .des {
     font-family: 'Playfair Display', serif;
     font-size: 12px;
-    /* margin-top: 10px;
-    margin-bottom: 20px; */
     opacity: 0;
     animation: animate 1s ease-in-out 0.3s 1 forwards;
 }
@@ -436,16 +431,7 @@ body {
     background: #eaeaea;
 }
 
-/* ============================= */
-/* ====  Tampilan Mobile (480px ke bawah)  ==== */
-/* ============================= */
-
 @media (max-width: 480px) {
-    
-/* #second-projects {
-    padding: 50px 20px;
-    text-align: center;
-} */
 
 #second-projects h2 {
     font-size: 1.5rem;
@@ -585,7 +571,6 @@ body {
     border-radius: 10px;
 }
 
-/* Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -871,21 +856,20 @@ body {
 
 @media (max-width: 480px) {
     .experience h2 {
-        font-size: 1.5em; /* Menyesuaikan ukuran font h2 */
+        font-size: 1.5em; 
         margin-bottom: 20px;
     }
 
     .experience-item {
-        gap: 15px; /* Mengurangi jarak antar elemen pada layar lebih kecil */
+        gap: 15px; 
     }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .menu ul {
         display: none;
         flex-direction: column;
-        background-color: #333;
+        background-color: #1F2A3A;
         position: absolute;
         top: 60px;
         right: 20px;
